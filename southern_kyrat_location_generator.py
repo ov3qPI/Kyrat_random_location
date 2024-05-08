@@ -158,3 +158,5 @@ def generate_location():
 
 # Generate and print a random location
 print(generate_location())
+
+input("Press enter to exit")
