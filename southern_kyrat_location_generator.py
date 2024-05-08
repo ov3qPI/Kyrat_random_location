@@ -156,5 +156,5 @@ def generate_location():
     random_location = random.choice(locations)
     return random_location
 
-# Generate and print a random town name
+# Generate and print a random location
 print(generate_location())
