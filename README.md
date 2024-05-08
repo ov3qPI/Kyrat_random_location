@@ -1,2 +1,2 @@
-# Kyrat_Location_Generator
+# KyratLocationGenerator
 Generates one of Kyrat's locations randomly, North and South seperately.
