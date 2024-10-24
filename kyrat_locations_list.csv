@@ -12,18 +12,18 @@ North,Pagan Min,,Royal Fortress,Himalayan,Sedge Meadow
 North,Pagan Min,,Royal Palace,Himalayan,Sedge Meadow
 North,Yuma,Bell Tower,Bell Tower X: 451 Y: 778  ,Mountainous,Coniferous
 North,Yuma,Bell Tower,Bell Tower X: 559 Y: 785  ,Mountainous,Coniferous
-North,Yuma,Bell Tower,Bell Tower X: 567 Y: 636  ,Mountainous,Larch
-North,Yuma,Bell Tower,Bell Tower X: 670 Y: 643,Mountainous,Larch
-North,Yuma,Fortress,Ratu Gadhi,Mountainous,Larch
 North,Yuma,Outpost,Bhirabata Outpost,Mountainous,Coniferous
 North,Yuma,Outpost,KEO Gold Storage,Mountainous,Coniferous
 North,Yuma,Outpost,KEO Logging Camp,Mountainous,Coniferous
+North,Yuma,Town,Utkarsh,Mountainous,Coniferous
+North,Yuma,,KEO Svargiya Mine,Mountainous,Coniferous
+North,Yuma,Bell Tower,Bell Tower X: 567 Y: 636  ,Mountainous,Larch
+North,Yuma,Bell Tower,Bell Tower X: 670 Y: 643,Mountainous,Larch
+North,Yuma,Fortress,Ratu Gadhi,Mountainous,Larch
 North,Yuma,Outpost,KEO Pradhana Mine,Mountainous,Larch
 North,Yuma,Outpost,Pokhari Ghara,Mountainous,Larch
 North,Yuma,Outpost,Royal Guard Kennels,Mountainous,Larch
-North,Yuma,Town,Utkarsh,Mountainous,Coniferous
 North,Yuma,,Jalendu Temple,Mountainous,Larch
-North,Yuma,,KEO Svargiya Mine,Mountainous,Coniferous
 North,,Summit,Yugala Rukha Summit,,
 North,,,Altar of Kalinag,,
 North,,,Anadekhi Ruins,,
@@ -113,61 +113,62 @@ South,DePleur,Outpost,Kyra Tea Terraces,Midlands,Quercus
 South,DePleur,Outpost,Kyra Tea Weigh Station,Midlands,Quercus
 South,DePleur,Outpost,Rochan Brick Co. Shipping,Midlands,Quercus
 South,DePleur,Outpost,Seven Treasures Ashram,Midlands,Quercus
-South,DePleur,Summit,Eklo Beindu Summit,,
-South,DePleur,Summit,Ghasa Dhalana Summit,,
+South,DePleur,Summit,Eklo Beindu Summit,Midlands,Quercus
+South,DePleur,Summit,Ghasa Dhalana Summit,Midlands,Quercus
 South,DePleur,Town,Tirtha,Midlands,Quercus
-South,DePleur,,Abandoned Jheel,,
-South,DePleur,,Army Supply Flight 2707,,
-South,DePleur,,Banashur's Kshetra,,
-South,DePleur,,Banashur's Pyres,,
-South,DePleur,,Banashur's Song,,
+South,DePleur,,Abandoned Jheel,Midlands,Quercus
+South,DePleur,,Army Supply Flight 2707,Midlands,Quercus
+South,DePleur,,Banashur's Kshetra,Midlands,Quercus
+South,DePleur,,Banashur's Pyres,Midlands,Quercus
+South,DePleur,,Banashur's Song,Midlands,Quercus
 South,DePleur,,Chal Jama Monastery,Midlands,Quercus
-South,DePleur,,Chinjan Sherpa Camp,,
+South,DePleur,,Chinjan Sherpa Camp,Midlands,Quercus
 South,DePleur,,City of Pain,Midlands,Quercus
-South,DePleur,,Cragway Rest,,
-South,DePleur,,Deepak's Millet Farm,,
-South,DePleur,,Dhami Ashram,,
-South,DePleur,,Dzong Bridge,,
-South,DePleur,,Fahmida's House,,
-South,DePleur,,Gandharva's Radio Station,,
+South,DePleur,,Cragway Rest,Midlands,Quercus
+South,DePleur,,Deepak's Millet Farm,Midlands,Quercus
+South,DePleur,,Dhami Ashram,Midlands,Quercus
+South,DePleur,,Dzong Bridge,Midlands,Quercus
+South,DePleur,,Fahmida's House,Midlands,Quercus
+South,DePleur,,Gandharva's Radio Station,Midlands,Quercus
 South,DePleur,,Golden Path Camp,Midlands,Quercus
-South,DePleur,,Golden Path Supply Cache,,
-South,DePleur,,Great Drought Chorten,,
-South,DePleur,,House of Chiffon,,
-South,DePleur,,Kalinag Returned,,
-South,DePleur,,Kalinag's Descent,,
-South,DePleur,,Khumjung Hamlet,,
+South,DePleur,,Golden Path Supply Cache,Midlands,Quercus
+South,DePleur,,Great Drought Chorten,Midlands,Quercus
+South,DePleur,,House of Chiffon,Midlands,Quercus
+South,DePleur,,Kalinag Returned,Midlands,Quercus
+South,DePleur,,Kalinag's Descent,Midlands,Quercus
+South,DePleur,,Khazana Temple,Midlands,Quercus
+South,DePleur,,Khumjung Hamlet,Midlands,Quercus
 South,DePleur,,Kyra Tea Factory,Midlands,Quercus
-South,DePleur,,Kyra Tea Farm,,
-South,DePleur,,Kyra Tea Storage,,
-South,DePleur,,Kyra's Meditation,,
-South,DePleur,,Kyra's Respite,,
-South,DePleur,,Kyra's Shade,,
-South,DePleur,,Kyra's Slumber,,
-South,DePleur,,Kyra's Tranquility,,
-South,DePleur,,Lakeside Sherpa Camp,,
-South,DePleur,,Oojam's Hut,,
-South,DePleur,,Prabin's House,,
-South,DePleur,,Pulley Cart,,
-South,DePleur,,Rai Family House,,
-South,DePleur,,Sarbajit's Boat,,
-South,DePleur,,Sarbajit's Raksi Still,,
-South,DePleur,,Satish's Sad Room,,
-South,DePleur,,Shanath Poachers,,
-South,DePleur,,Smuggler's Portage,,
-South,DePleur,,Surefoot Bridge,,
-South,DePleur,,The Partisans' Clinic,,
+South,DePleur,,Kyra Tea Farm,Midlands,Quercus
+South,DePleur,,Kyra Tea Storage,Midlands,Quercus
+South,DePleur,,Kyra's Meditation,Midlands,Quercus
+South,DePleur,,Kyra's Respite,Midlands,Quercus
+South,DePleur,,Kyra's Shade,Midlands,Quercus
+South,DePleur,,Kyra's Slumber,Midlands,Quercus
+South,DePleur,,Kyra's Tranquility,Midlands,Quercus
+South,DePleur,,Lakeside Sherpa Camp,Midlands,Quercus
+South,DePleur,,Oojam's Hut,Midlands,Quercus
+South,DePleur,,Prabin's House,Midlands,Quercus
+South,DePleur,,Pulley Cart,Midlands,Quercus
+South,DePleur,,Rai Family House,Midlands,Quercus
+South,DePleur,,Sarbajit's Boat,Midlands,Quercus
+South,DePleur,,Sarbajit's Raksi Still,Midlands,Quercus
+South,DePleur,,Satish's Sad Room,Midlands,Quercus
+South,DePleur,,Shanath Poachers,Midlands,Quercus
+South,DePleur,,Smuggler's Portage,Midlands,Quercus
+South,DePleur,,Surefoot Bridge,Midlands,Quercus
+South,DePleur,,The Partisans' Clinic,Midlands,Quercus
 South,DePleur,,The Sleeping Saints,Midlands,Quercus
-South,DePleur,,Tiger Den,,
-South,DePleur,,Udayagiri Cave,,
-South,DePleur,,Vibhat's Auto Repair,,
-South,DePleur,,Watery Grave,,
-South,DePleur,,Yalung's Eye,,
-South,DePleur,,Yalung's Jaw,,
-South,DePleur,,Yalung's Rot,,
-South,DePleur,,Yalung's Spine,,
-South,DePleur,,Yalung's Tears,,
-South,DePleur,,Yalung's Teeth,,
+South,DePleur,,Tiger Den,Midlands,Quercus
+South,DePleur,,Udayagiri Cave,Midlands,Quercus
+South,DePleur,,Vibhat's Auto Repair,Midlands,Quercus
+South,DePleur,,Watery Grave,Midlands,Quercus
+South,DePleur,,Yalung's Eye,Midlands,Quercus
+South,DePleur,,Yalung's Jaw,Midlands,Quercus
+South,DePleur,,Yalung's Rot,Midlands,Quercus
+South,DePleur,,Yalung's Spine,Midlands,Quercus
+South,DePleur,,Yalung's Tears,Midlands,Quercus
+South,DePleur,,Yalung's Teeth,Midlands,Quercus
 South,Noore,Bell Tower,Bell Tower X: 231 Y: 575,Midlands,Mixed Forest
 South,Noore,Bell Tower,Bell Tower X: 342 Y: 580,Midlands,Mixed Forest
 South,Noore,Bell Tower,Bell Tower X: 356 Y: 658,Midlands,Mixed Forest
@@ -181,21 +182,75 @@ South,Noore,Outpost,Rochan Brick Co. Storage,Midlands,Mixed Forest
 South,Noore,Outpost,Royal Raksi Brewery,Midlands,Mixed Forest
 South,Noore,Outpost,Shanath Breeders,Midlands,Mixed Forest
 South,Noore,Outpost,Shanath Training Ground,Midlands,Mixed Forest
-South,Noore,Summit,Hariyo Mathi Summit,,
-South,Noore,Summit,Rukha Sikhara Summit,,
+South,Noore,Summit,Hariyo Mathi Summit,Midlands,Mixed Forest
+South,Noore,Summit,Rukha Sikhara Summit,Midlands,Mixed Forest
+South,Noore,,Aghori Ashram,Midlands,Mixed Forest
+South,Noore,,Arjun's Still,Midlands,Mixed Forest
+South,Noore,,Army Supply Flight 2412,Midlands,Mixed Forest
+South,Noore,,Avinash Primary School,Midlands,Mixed Forest
+South,Noore,,Bagmati Camp,Midlands,Mixed Forest
+South,Noore,,Banashur's Tree of Life,Midlands,Mixed Forest
+South,Noore,,Bhutan Ghat,Midlands,Mixed Forest
+South,Noore,,Collapsed Ghupa,Midlands,Mixed Forest
+South,Noore,,Danger Dashed,Midlands,Mixed Forest
+South,Noore,,Dead End,Midlands,Mixed Forest
+South,Noore,,Dhyangro Ashram,Midlands,Mixed Forest
+South,Noore,,Divya's Hideout,Midlands,Mixed Forest
+South,Noore,,Dochula Tunnel,Midlands,Mixed Forest
+South,Noore,,Dzu-Teh Ruins,Midlands,Mixed Forest
 South,Noore,,Ghale Homestead,Midlands,Mixed Forest
+South,Noore,,Gre Sikhara,Midlands,Mixed Forest
+South,Noore,,Hariyo Ghupa,Midlands,Mixed Forest
+South,Noore,,Jhankri Ashram,Midlands,Mixed Forest
+South,Noore,,Kalasa Ashram,Midlands,Mixed Forest
+South,Noore,,Kalinag the Seeker,Midlands,Mixed Forest
+South,Noore,,Kalinag's Door,Midlands,Mixed Forest
+South,Noore,,Kalinag's Wisdom,Midlands,Mixed Forest
 South,Noore,,King's Bridge,Midlands,Mixed Forest
-South,Noore,,Kyrat Intl. Airport,,
+South,Noore,,Kyra's Flower,Midlands,Mixed Forest
+South,Noore,,Kyra's Nadi,Midlands,Mixed Forest
+South,Noore,,Kyra's Pilgrimage,Midlands,Mixed Forest
+South,Noore,,Kyra's Retreat,Midlands,Mixed Forest
+South,Noore,,Kyrat Intl. Airport,Midlands,Mixed Forest
+South,Noore,,Malla Bridge,Midlands,Mixed Forest
+South,Noore,,Nadi Gardiyana,Midlands,Mixed Forest
+South,Noore,,Ocean Breeze Lab,Midlands,Mixed Forest
+South,Noore,,Raj Pandhi Brewery,Midlands,Mixed Forest
+South,Noore,,Raksi Still,Midlands,Mixed Forest
+South,Noore,,Rato Lagoon,Midlands,Mixed Forest
+South,Noore,,Rochan Brick Co. Offices,Midlands,Mixed Forest
+South,Noore,,Rochan Brick Co. Payroll,Midlands,Mixed Forest
 South,Noore,,Rochan Brick Factory,Midlands,Mixed Forest
-South,Noore,,Royal Munitions Depot,,
+South,Noore,,Rochan Delivery Wreck,Midlands,Mixed Forest
+South,Noore,,Royal Munitions Depot,Midlands,Mixed Forest
 South,Noore,,Shanath,Midlands,Mixed Forest
-South,Noore,,Shanath Arena,,
-South,Noore,,Shanath Trappers,,
+South,Noore,,Shanath Hunters,Midlands,Mixed Forest
+South,Noore,,Shanath Proving Ground,Midlands,Mixed Forest
+South,Noore,,Shanath Trappers,Midlands,Mixed Forest
+South,Noore,,Sherpa Forest Camp,Midlands,Mixed Forest
+South,Noore,,Sherpa Plateau Camp,Midlands,Mixed Forest
+South,Noore,,Sherpa Scripture Camp,Midlands,Mixed Forest
+South,Noore,,Sherpa Yak Enclosure,Midlands,Mixed Forest
+South,Noore,,Sunny & Prem's Storage,Midlands,Mixed Forest
+South,Noore,,Sunny's End,Midlands,Mixed Forest
+South,Noore,,The Crazy Cock Bar,Midlands,Mixed Forest
+South,Noore,,Yakshini's Bondage,Midlands,Mixed Forest
+South,Noore,,Yakshini's Ecstacy,Midlands,Mixed Forest
+South,Noore,,Yakshini's Flesh,Midlands,Mixed Forest
+South,Noore,,Yakshini's Pleasure,Midlands,Mixed Forest
+South,Noore,,Yakshini's Sin,Midlands,Mixed Forest
+South,Noore,,Yalung's Heart,Midlands,Mixed Forest
+South,Noore,,Yalung's Mind,Midlands,Mixed Forest
+South,Noore,,Yalung's Pantha,Midlands,Mixed Forest
+South,Noore,,Yalung's Seed,Midlands,Mixed Forest
+South,Noore,,Yalung's Soul,Midlands,Mixed Forest
+South,Noore,,Yalung's Stomach,Midlands,Mixed Forest
 South,Rebels,Bell Tower,Bell Tower X: 272 Y: 444,Terai,Alder Forest
 South,Rebels,Outpost,Khilana Bazaar,Terai,Alder Forest
 South,Rebels,Town,Banapur,Terai,Alder Forest
 South,Rebels,,Army Supply Flight 2911,Terai,Alder Forest
 South,Rebels,,Ettan's Shack,Terai,Alder Forest
+South,Rebels,,Kanan's Farm,Terai,Alder Forest
 South,Rebels,,Kyra's Guidance,Terai,Alder Forest
 South,Rebels,,Kyra's Refuge,Terai,Alder Forest
 South,Rebels,,Old Isha's House,Terai,Alder Forest
@@ -203,60 +258,3 @@ South,Rebels,,Prabhakar's Farm,Terai,Alder Forest
 South,Rebels,,Samapana Falls,Terai,Alder Forest
 South,Rebels,,Yalung's Maw,Terai,Alder Forest
 South,Rebels,,Yalung's Skull,Terai,Alder Forest
-South,Noore,,Gre Sikhara,,
-South,Noore,,Nadi Gardiyana,,
-South,Noore,,Aghori Ashram,,
-South,Noore,,Arjun's Still,,
-South,,,Army Supply Flight 2412,,
-South,Noore,,Avinash Primary School,,
-South,Noore,,Bagmati Camp,,
-South,Noore,,Banashur's Tree of Life,,
-South,Noore,,Bhutan Ghat,,
-South,Noore,,Collapsed Ghupa,,
-South,Noore,,Danger Dashed,,
-South,Noore,,Dead End,,
-South,Noore,,Dhyangro Ashram,,
-South,Noore,,Divya's Hideout,,
-South,Noore,,Dochula Tunnel,,
-South,Noore,,Dzu-Teh Ruins,,
-South,Noore,,Hariyo Ghupa,,
-South,Noore,,Jhankri Ashram,,
-South,Noore,,Kalasa Ashram,,
-South,Noore,,Kalinag the Seeker,,
-South,Noore,,Kalinag's Door,,
-South,Noore,,Kalinag's Wisdom,,
-South,Rebels,,Kanan's Farm,,
-South,DePleur,Khazana Temple,,
-South,Noore,,Kyra's Flower,,
-South,Noore,,Kyra's Nadi,,
-South,Noore,,Kyra's Pilgrimage,,
-South,Noore,,Kyra's Retreat,,
-South,Noore,,Malla Bridge,,
-South,Noore,,Ocean Breeze Lab,,
-South,Noore,,Raj Pandhi Brewery,,
-South,Noore,,Raksi Still,,
-South,Noore,,Rato Lagoon,,
-South,Noore,,Rochan Brick Co. Offices,,
-South,Noore,,Rochan Brick Co. Payroll,,
-South,Noore,,Rochan Delivery Wreck,,
-South,Noore,,Shanath Hunters,,
-South,Noore,,Shanath Proving Ground,,
-South,Noore,,Sherpa Forest Camp,,
-South,Noore,,Sherpa Plateau Camp,,
-South,Noore,,Sherpa Scripture Camp,,
-South,,,Sherpa Yak Enclosure,,
-South,Noore,,Sunny & Prem's Storage,,
-South,Noore,,Sunny's End,,
-South,,,The church of Longinus,,
-South,Noore,,The Crazy Cock Bar,,
-South,Noore,,Yakshini's Bondage,,
-South,Noore,,Yakshini's Ecstacy,,
-South,Noore,,Yakshini's Flesh,,
-South,Noore,,Yakshini's Pleasure,,
-South,Noore,,Yakshini's Sin,,
-South,Noore,,Yalung's Heart,,
-South,Noore,,Yalung's Mind,,
-South,Noore,,Yalung's Pantha,,
-South,Noore,,Yalung's Seed,,
-South,Noore,,Yalung's Soul,,
-South,Noore,,Yalung's Stomach,,
