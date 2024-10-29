@@ -13,23 +13,43 @@ def generate_location(tags):
     filtered_subset = pd.DataFrame()  # Initialize the DataFrame outside the loop
     if tags:
         tag_list = tags.split()  # Split tags by spaces to support multiple tag inputs
+        or_tags = []  # To hold tags with '~' symbol
         for tag in tag_list:
-            filtered_subset = pd.DataFrame()  # Reset filtered_subset for each tag
-            tag_found = False
-            for column in locations_df.columns:
-                if column.lower() != 'location':
-                    matches = filtered_locations[filtered_locations[column].str.contains(tag, case=False, na=False)]
-                    if not matches.empty:
-                        tag_found = True
-                        filtered_subset = pd.concat([filtered_subset, matches])
-            
-            if not tag_found:
-                print(f"Tag '{tag}' not found")
-                return "No locations found with the given tags."
-            
-            filtered_locations = filtered_subset.drop_duplicates()
-            if filtered_locations.empty:
-                break
+            if '~' in tag:
+                or_tags.append(tag.replace('~', ''))
+            else:
+                filtered_subset = pd.DataFrame()  # Reset filtered_subset for each tag
+                tag_found = False
+                negate = tag.startswith("-")
+                actual_tag = tag[1:] if negate else tag
+                for column in locations_df.columns:
+                    if column.lower() != 'location':
+                        if negate:
+                            matches = filtered_locations[~filtered_locations[column].str.contains(actual_tag, case=False, na=False)]
+                        else:
+                            matches = filtered_locations[filtered_locations[column].str.contains(actual_tag, case=False, na=False)]
+                        if not matches.empty:
+                            tag_found = True
+                            filtered_subset = pd.concat([filtered_subset, matches])
+                
+                if not tag_found:
+                    print(f"Tag '{tag}' not found")
+                    return "No locations found with the given tags."
+                
+                filtered_locations = filtered_subset.drop_duplicates()
+                if filtered_locations.empty:
+                    break
+
+        # Process '~' tags (OR condition)
+        if or_tags:
+            or_filtered_subset = pd.DataFrame()
+            for or_tag in or_tags:
+                for column in locations_df.columns:
+                    if column.lower() != 'location':
+                        matches = locations_df[locations_df[column].str.contains(or_tag, case=False, na=False)]
+                        or_filtered_subset = pd.concat([or_filtered_subset, matches])
+            if not or_filtered_subset.empty:
+                filtered_locations = pd.concat([filtered_locations, or_filtered_subset]).drop_duplicates()
     
     if not filtered_locations.empty:
         return random.choice(filtered_locations['Location'].tolist())
