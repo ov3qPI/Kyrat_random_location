@@ -1,52 +1,54 @@
 import random
+import pandas as pd
+from prompt_toolkit import prompt
+from prompt_toolkit.completion import WordCompleter
 
-# List of Kyrat Locations
-locations = {
-    'South': [
-        "Baghadur", "Varshakot", "Banapur", "Chal Jama Monastery", "City of Pain", "Ghale Homestead",
-        "Golden Path Camp", "King's Bridge", "Kyra Tea Factory", "Rochan Brick Factory", "Shanath",
-        "The Sleeping Saints", "Tirtha", "Barnali's Textiles", "Kheta Manor", "Khilana Bazaar",
-        "Kyra Tea Terraces", "Kyra Tea Weigh Station", "Open Hearts Clinic", "Pranijagat School",
-        "Rochan Brick Co. Shipping", "Rochan Brick Co. Storage", "Royal Raksi Brewery", "Seven Treasures Ashram",
-        "Shanath Breeders", "Shanath Training Ground", "Abandoned Jheel", "Aghori Ashram", "Arjun's Still",
-        "Army Supply Flight 2412", "Army Supply Flight 2707", "Army Supply Flight 2911", "Avinash Primary School",
-        # truncated for brevity
-    ],
-    'North': [
-        "Rajgad Gulag", "Ratu Gadhi", "Jalendu Temple", "KEO Svargiya Mine", "Royal Fortress", "Royal Palace",
-        "Utkarsh", "Bhirabata Outpost", "Border Observation Post", "KEO Gold Storage", "KEO Logging Camp",
-        "KEO Pradhana Mine", "Lhumtse Barracks", "Namboche Monastery", "Pokhari Ghara", "Royal Guard Kennels",
-        "Sahi Jile Checkpoint", "Shikharpur", "Altar of Kalinag", "Anadekhi Ruins", "Ananta Muna Shrine",
-        "Anjali's Bakery", "Asru Cave", "Asthi Den", "Banashur Ki Sirhi", "Banashur's Refuge", "Banashur's Tranquility",
-        # truncated for brevity
-    ]
-}
+# Load Kyrat Locations from CSV
+import os
+locations_df = pd.read_csv(os.path.join(os.path.dirname(__file__), 'kyrat_locations_list.csv'))
 
-def generate_location(region=None):
-    if region in locations:
-        return random.choice(locations[region])
+def generate_location(tags):
+    # Filter locations based on provided tags
+    filtered_locations = locations_df
+    filtered_subset = pd.DataFrame()  # Initialize the DataFrame outside the loop
+    if tags:
+        tag_list = tags.split()  # Split tags by spaces to support multiple tag inputs
+        for tag in tag_list:
+            filtered_subset = pd.DataFrame()  # Reset filtered_subset for each tag
+            tag_found = False
+            for column in locations_df.columns:
+                if column.lower() != 'location':
+                    matches = filtered_locations[filtered_locations[column].str.contains(tag, case=False, na=False)]
+                    if not matches.empty:
+                        tag_found = True
+                        filtered_subset = pd.concat([filtered_subset, matches])
+            
+            if not tag_found:
+                print(f"Tag '{tag}' not found")
+                return "No locations found with the given tags."
+            
+            filtered_locations = filtered_subset.drop_duplicates()
+            if filtered_locations.empty:
+                break
+    
+    if not filtered_locations.empty:
+        return random.choice(filtered_locations['Location'].tolist())
     else:
-        all_locations = [loc for locs in locations.values() for loc in locs]
-        return random.choice(all_locations)
+        return "No locations found with the given tags."
 
 def main():
-    print('For South, enter "S"')
-    print('For North, enter "N"')
-    print('For either, press "Enter"')
-
-    region_choice = input("Please choose a region: ").upper()
-
-    if region_choice == 'S':
-        region = 'South'
-    elif region_choice == 'N':
-        region = 'North'
-    elif region_choice == '':
-        region = None
-    else:
-        print("Invalid input. Please enter 'S', 'N', or press 'Enter'.")
-        return
-
-    location = generate_location(region)
+    # Collect all unique values across relevant columns for autocompletion
+    unique_values = set()
+    for column in locations_df.columns:
+        if column.lower() != 'location':
+            unique_values.update(locations_df[column].dropna().unique().tolist())
+    
+    completer = WordCompleter(list(unique_values), ignore_case=True)
+    
+    print("Enter tags to filter locations (you can enter anything, or press Enter to skip):")
+    tags = prompt("Tags: ", completer=completer).strip()
+    
+    location = generate_location(tags)
     print(location)
 
 if __name__ == "__main__":
