@@ -9,9 +9,6 @@ locations_df = pd.read_csv(os.path.join(os.path.dirname(__file__), 'kyrat_locati
 # Ensure all columns are present for every row
 expected_columns = locations_df.columns  # Assuming we want all columns consistently
 locations_df = locations_df.reindex(columns=expected_columns, fill_value=None)
-# Warning for missing values
-if locations_df.isnull().values.any():
-    print("Warning: Some rows in the CSV file are missing values. Missing values will be treated as empty.")
 
 def generate_location(tags):
     # Filter locations based on provided tags
@@ -59,7 +56,21 @@ def generate_location(tags):
                 filtered_locations = pd.concat([filtered_locations, or_filtered_subset]).drop_duplicates()
 
     if not filtered_locations.empty:
-        return random.choice(filtered_locations['Location'].tolist())
+        selected_location = filtered_locations.sample().iloc[0]
+        location_name = selected_location['Location']
+        x_coord = selected_location.get('X', '?')
+        y_coord = selected_location.get('Y', '?')
+        x_coord = '?' if pd.isna(x_coord) else x_coord
+        y_coord = '?' if pd.isna(y_coord) else y_coord
+
+        # Check if the location is unmarked by searching all columns for the word 'unmarked'
+        unmarked_tag = ""
+        for value in selected_location:
+            if isinstance(value, str) and 'unmarked' in value:
+                unmarked_tag = " (unmarked)"
+                break
+
+        return f"{location_name}, X:{x_coord}, Y:{y_coord}{unmarked_tag}"
     else:
         return "No locations found with the given tags."
 
